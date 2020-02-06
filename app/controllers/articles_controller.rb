@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article.destroy
-    flash[:notice] = "The article is deleted successfully!"
+    flash[:danger] = "The article is deleted successfully!"
     redirect_to articles_path
   end
 
@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
     #render plain: params[:article].inspect     #To display what is passed via params hash
     @article = Article.new(article_params)      #White list the params first
     if @article.save
-      flash[:notice] = "The article is created successfully!"     #Stays for one redirect cycle
+      flash[:success] = "The article is created successfully!"     #Stays for one redirect cycle
       redirect_to article_path(@article)     #it needs the article (/id), Show action is needed
     else
       render 'new'
@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)      #Similar way to build an article
-      flash[:notice] = "The article is updated successfully!"
+      flash[:success] = "The article is updated successfully!"
       redirect_to article_path(@article)
     else
       render 'edit'

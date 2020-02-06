@@ -36,8 +36,8 @@
   color: #fff;
 }
 .my_active_btn:hover {
-  background-color: #330066;
-  color: #ffff00
+  background-color: #f9bc06;
+  color: #4d0099;
 }
 .footer {
   color: #bfbfbf;
@@ -59,7 +59,16 @@
   border-radius: 15px;
   width: 70%
 }
-.create_head {
+#alert_body {
+  margin: auto;
+  width: 70%
+}
+.head {
   color: #330066;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.site_body {
+  background-color: #fafafa;
 
 }
