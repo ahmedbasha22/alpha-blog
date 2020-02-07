@@ -7,7 +7,7 @@
       <%= link_to article.title, article_path(article), class: "article-title" %>
     </div>
     <div class="list-body">
-      <%= truncate(article.description, length: 150) %>
+      <%= truncate(article.description, length: 300) %>
     </div>
     <div class="article-btns">
       <%= link_to 'Edit this article', edit_article_path(article), class:"btn btn-primary round-btn" %>
