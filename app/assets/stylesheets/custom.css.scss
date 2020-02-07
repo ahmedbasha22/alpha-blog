@@ -2,11 +2,13 @@
 
 @import 'bootstrap/dist/css/bootstrap';
 .navbar {
-  opacity: 0.7;
+  background-color: rgb(86, 61, 124);
+  border-radius: 12px;
+  opacity: 0.9
 }
 #logo {
   font-weight: bold;
-  color: #330066
+  color: #fff
 }
 #home_body {
   background-image: asset-url("h.jpg");
@@ -19,39 +21,48 @@
   margin-top: 15%;
   width: 70%;
   opacity: 0.85;
-
 }
 
 .my_btn {
-  border-color: #4d0099;
-  color: #4d0099;
+  border-color: rgb(86, 61, 124);
+  color: rgb(86, 61, 124);
 
 }
 .my_btn:hover {
-  background-color: #4d0099;
-  color: #fff;
+  background-color: #f9bc06;
+  color: #000;
 }
 .my_active_btn {
-  background-color: #4d0099;
+  background-color: rgb(86, 61, 124);
   color: #fff;
+
 }
 .my_active_btn:hover {
+  background-color: #ffdb4d;
+  color: #000;
+}
+#login {
+  border-color: #fff;
+  color: #fff;
+
+}
+#login:hover {
   background-color: #f9bc06;
-  color: #4d0099;
+  color: rgb(86, 61, 124);
 }
 .footer {
   color: #bfbfbf;
-  padding-top: 280px;
+  padding-top: 250px;
   text-align: center;
 }
 #welcome {
-  color: #330066;
+  color: rgb(86, 61, 124);
 }
 #create {
-  color: #330066;
+  color: rgb(86, 61, 124);
   background-color: #f2f2f2;
   border-color: #330066;
-  border-style: outset;
+  border-style: solid;
   border-width: 1px;
   margin: auto;
   margin-top: 30px;
@@ -64,11 +75,42 @@
   width: 70%
 }
 .head {
-  color: #330066;
-  margin-top: 20px;
+  color: rgb(86, 61, 124);
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
-.site_body {
-  background-color: #fafafa;
 
+.white-text {
+  color: #fff;
+}
+.white-text:hover {
+  color: #f9bc06;
+}
+.article-body {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+
+}
+
+#description {
+  color: rgb(86, 61, 124);
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+}
+
+.round-btn {
+  border-radius: 20px;
+  font-size: 13px;
+}
+.active-round-btn:hover {
+  background-color: #330066;
+  color: #fff;
+}
+.article-btns {
+  border-top: 1px solid #eaeaea;
+  padding-top: 10px;
 }
