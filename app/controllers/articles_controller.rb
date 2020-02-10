@@ -20,8 +20,10 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    debugger
     #render plain: params[:article].inspect     #To display what is passed via params hash
     @article = Article.new(article_params)      #White list the params first
+    @article.user = User.first
     if @article.save
       flash[:success] = "The article is created successfully!"     #Stays for one redirect cycle
       redirect_to article_path(@article)     #it needs the article (/id), Show action is needed
