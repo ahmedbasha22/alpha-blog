@@ -20,7 +20,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    debugger
     #render plain: params[:article].inspect     #To display what is passed via params hash
     @article = Article.new(article_params)      #White list the params first
     @article.user = User.first

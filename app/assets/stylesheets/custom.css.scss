@@ -35,7 +35,7 @@
 .my_active_btn {
   background-color: rgb(86, 61, 124);
   color: #fff;
-
+  margin-top: 25px;
 }
 .my_active_btn:hover {
   background-color:  #f9bc06;
@@ -58,7 +58,7 @@
 #welcome {
   color: rgb(86, 61, 124);
 }
-#create {
+.form {
   color: rgb(86, 61, 124);
   background-color: #f2f2f2;
   border-color: #330066;
@@ -68,8 +68,17 @@
   margin-top: 30px;
   padding-top: 20px;
   border-radius: 15px;
-  width: 70%
+  width: 70%;
 }
+
+.signup {
+  font-weight: bold;
+}
+
+.signup-frame {
+  margin-top: 10%;
+}
+
 #alert_body {
   margin: auto;
   width: 70%
@@ -135,4 +144,11 @@
   border-top: 1px solid #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.sign-text {
+  color: #404040;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
