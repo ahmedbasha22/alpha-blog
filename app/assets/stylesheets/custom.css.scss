@@ -2,25 +2,29 @@
 
 @import 'bootstrap/dist/css/bootstrap';
 .navbar {
-  background-color: rgb(86, 61, 124);
+  background-color: rgba(26, 26, 26, 0.75);
   border-radius: 12px;
-  opacity: 0.9
 }
 #logo {
   font-weight: bold;
   color: #fff
 }
 #home_body {
-  background-image: asset-url("h.jpg");
+  background-image: asset-url("sign.jpg");
   background-size: cover;
-
-
+  color: #fff;
 }
+
+.sign-body {
+  background-image: asset-url("sign.jpg");
+  background-size: cover;
+}
+
 #home_jumbotron {
   margin: auto;
-  margin-top: 15%;
+  margin-top: 5%;
   width: 70%;
-  opacity: 0.85;
+  color: #fff;
 }
 
 .my_btn {
@@ -35,10 +39,10 @@
 .my_active_btn {
   background-color: rgb(86, 61, 124);
   color: #fff;
-  margin-top: 25px;
+  border-radius: 20px;
 }
 .my_active_btn:hover {
-  background-color:  #f9bc06;
+  background-color: #f9bc06;
   color: rgb(86, 61, 124);
 }
 #login {
@@ -56,38 +60,56 @@
   text-align: center;
 }
 #welcome {
-  color: rgb(86, 61, 124);
+  color: #fff;
+
 }
+
+.site-body {
+  background-image: asset-url("bg2.jpg");
+
+
+}
+
 .form {
-  color: rgb(86, 61, 124);
-  background-color: #f2f2f2;
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.75);
   border-color: #330066;
   border-style: solid;
   border-width: 1px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
-  width: 70%;
+  width: 65%;
 }
 
 .signup {
-  font-weight: bold;
+
 }
 
 .signup-frame {
   margin-top: 10%;
+  color: #fff;
+  border-color: #fff;
+  border-width: inherit;
+  width: 55%
 }
 
 #alert_body {
   margin: auto;
-  width: 70%
+  margin-top: 20px;
+  width: 60%
 }
 .head {
   color: #404040;
   font-family: "Segoe UI", Arial, sans-serif;
   margin-top: 40px;
   margin-bottom: 20px;
+
+}
+
+.head-purple {
+  color: rgb(26, 26, 26);
   font-weight: bold;
 }
 
@@ -103,6 +125,7 @@
   border-style: solid;
   border-width: 1px;
   padding: 20px;
+  opacity: 1;
 }
 .meta-details {
   color: #4d004d;
@@ -117,6 +140,23 @@
   border-radius: 20px;
   font-size: 13px;
 }
+
+.signup-btn {
+  font-size: 16px;
+  background-color: #f9bc06;
+  color: rgb(86, 61, 124);
+}
+
+.signup-btn {
+  font-size: 16px;
+  background-color: #f9bc06;
+  color: rgb(86, 61, 124);
+}
+
+.signup-btn:hover {
+  background-color: #f28b0d;
+}
+
 .active-round-btn:hover {
   background-color: #330066;
   color: #fff;
@@ -128,6 +168,7 @@
 
 .list {
   margin: 30px;
+  opacity: 1;
 }
 
 .article-title {
@@ -144,11 +185,20 @@
   border-top: 1px solid #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
+
 }
 
 .sign-text {
-  color: #404040;
+  color: #fff;
   font-family: "Segoe UI", Arial, sans-serif;
   margin-bottom: 20px;
-  font-weight: bold;
+}
+
+.placeholder {
+  width: 70%
+}
+
+.my-4 {
+  border-color: #fff;
+  width: 60%;
 }
