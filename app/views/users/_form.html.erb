@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body class="site_body sign-body">
+  <body class= <%= @user.new_record? ? "sign-body" : "site-body" %>>
     <div class='row form signup-frame'>
       <div class='col-md-12'>
         <%= form_for @user do |f| %>

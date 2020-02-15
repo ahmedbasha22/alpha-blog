@@ -95,6 +95,14 @@
   width: 55%
 }
 
+.profile-frame {
+  margin-top: 10%;
+  color: #fff;
+  border-color: #fff;
+  border-width: inherit;
+  width: 100%
+}
+
 #alert_body {
   margin: auto;
   margin-top: 20px;
@@ -125,6 +133,7 @@
   border-style: solid;
   border-width: 1px;
   padding: 20px;
+  width: 80%;
   opacity: 1;
 }
 .meta-details {
@@ -167,7 +176,8 @@
 }
 
 .list {
-  margin: 30px;
+  margin: auto;
+  margin-top: 30px;
   opacity: 1;
 }
 
@@ -183,6 +193,7 @@
 
 .list-body {
   border-top: 1px solid #eaeaea;
+  color: rgb(26, 26, 26);
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -201,4 +212,8 @@
 .my-4 {
   border-color: #fff;
   width: 60%;
+}
+
+.gravatar {
+  margin-bottom: 40px;
 }

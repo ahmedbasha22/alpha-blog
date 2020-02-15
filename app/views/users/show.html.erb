@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="site-body">
+    <div class='row form profile-frame' align="center">
+      <div class='col-md-12'>
+        <%= form_for @user do |f| %>
+        <h1 class="sign-text" align="center"> <%= @user.username %>'s page</h1>
+        <div class="gravatar" align="center">
+          <%= gravatar_for @user, size: 150 %>
+        </div>
+        <h4 align="center"><%= @user.username %>'s articles</h4>
+        <% end %>
+        <%= render 'articles/article', obj: @user.articles %>
+        <div class="form-group" align='center'>
+          <div class="col-sm-10">
+            <%= link_to 'Return to articles listing', articles_path %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
