@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="site-body">
+    <div class='profile-frame'>
+        <h1 class="sign-text" align="center"> All Alpha-Blogers</h1>
+        <% @users.each do |user| %>
+        <div class="article-body list-users" align="center">
+          <div class="gravatar">
+            <%= link_to gravatar_for(user), user_path(user) %>
+          </div>
+          <%= link_to user.username, user_path(user), class: "article-title name" %>
+          <div class="meta-details">
+            <li><small> <%= pluralize(user.articles.count, "article") if user.articles %> created. </small></li>
+          </div>
+
+        </div>
+        <% end %>
+        <div class="return" align='center'>
+            <%= link_to 'Return to articles listing', articles_path %>
+        </div>
+      </div>
+  </body>
+</html>
