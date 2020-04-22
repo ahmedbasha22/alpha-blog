@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- All views are served here -->
 <html>
   <head>
     <title>AlphaBlog</title>
@@ -10,8 +11,8 @@
   </head>
 
   <body>
-    <%= render 'layouts/messages' %>
     <%= render 'layouts/navigation' %>
+    <%= render 'layouts/messages' %>
     <div class="container">
       <%= yield %>
     </div>

@@ -66,14 +66,14 @@
 
 .site-body {
   background-image: asset-url("bg2.jpg");
-
+  background-size: cover;
 
 }
 
 .form {
   color: #fff;
   background-color: rgba(26, 26, 26, 0.75);
-  border-color: #330066;
+  border-color: rgba(26, 26, 26, 0.75);
   border-style: solid;
   border-width: 1px;
   margin: auto;
@@ -248,4 +248,9 @@
 .name {
   margin: auto;
   font-size: 20px;
+}
+.alert{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
 }
