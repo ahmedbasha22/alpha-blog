@@ -4,13 +4,15 @@
     <meta charset="utf-8">
   </head>
   <body id="home_body">
-    <div id="home_jumbotron" align="center">
-      <h1 class="display-4" align="center" id="welcome">Welcome to Alpha-Blog!</h1>
-      <p class="lead">This is an application where you can create simple articles containing
-         title and description, add categories to those articles and be able to edit or delete your own.</p>
-      <hr class="my-4">
-      <p align="center">If you don't have an account join us now!</p>
-      <%= link_to "Sign up", signup_path, class: "btn btn-lg my_btn round-btn signup-btn", align: "center" %>
+    <div class="container">
+      <div id="home_jumbotron" align="center">
+        <h1 class="display-4" align="center" id="welcome">Welcome to <span id="alpha-word">Alpha-Blog</span> !</h1>
+        <br><p class="lead">This is an application where you can create simple articles containing
+           title and description, add categories to those articles and be able to edit or delete your own.</p>
+        <hr class="my-4">
+        <p align="center">If you don't have an account join us now!</p>
+        <%= link_to "Sign up", signup_path, class: "btn btn-lg my_btn round-btn signup-btn", align: "center" %>
+      </div>
     </div>
   </body>
 </html>

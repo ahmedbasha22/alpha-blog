@@ -1,29 +1,63 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 
 @import 'bootstrap/dist/css/bootstrap';
-.navbar {
-  background-color: rgba(26, 26, 26, 0.75);
-  border-radius: 12px;
+.nav .navbar-social > a {
+    padding:0;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
 }
 #logo {
   font-weight: bold;
-  color: #fff
+  color: #fff !important;
+}
+.nav-link {
+  color: #fff !important;
 }
 #home_body {
-  background-image: asset-url("sign.jpg");
+  background-image: asset-url("bg2.png");
   background-size: cover;
-  color: #fff;
+  font-family: sans-serif;
+}
+
+#alpha-word {
+  color: #4513BB;
+  background-color: #FEF9E7;
+  animation-name: example;
+  animation-duration: 8s;
+  border-radius: 30px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+@keyframes example {
+  0%   {background-color: #FEF9E7;}
+  12%  {background-color: #F9E79F;}
+  25%  {background-color: #F4D03F;}
+  37% {background-color: #F1C40F;}
+  50%   {background-color: #D4AC0D;}
+  67%  {background-color: #B7950B;}
+  75%  {background-color: #9A7D0A;}
+  85%  {background-color: #F1C40F;}
+  100% {background-color: #FEF9E7;}
 }
 
 .sign-body {
   background-image: asset-url("sign.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 #home_jumbotron {
   margin: auto;
-  margin-top: 5%;
-  width: 70%;
+  margin-top: 7%;
+  border-style: solid;
+  padding: 5%;
+  border-color: #fff;
+  border-radius: 50px;
+  border-width: thin;
   color: #fff;
 }
 
@@ -46,13 +80,14 @@
   color: rgb(86, 61, 124);
 }
 #login {
-  border-color: #fff;
-  color: #fff;
+  border-color: #f9bc06;
+  font-size: 15px;
+  color: #f9bc06;
 
 }
 #login:hover {
   background-color: #f9bc06;
-  color: rgb(86, 61, 124);
+  color: #614866;
 }
 .footer {
   color: #bfbfbf;
@@ -60,13 +95,11 @@
   text-align: center;
 }
 #welcome {
-  color: #fff;
-
+  font-family: sans-serif;
 }
 
 .site-body {
-  background-image: asset-url("bg2.jpg");
-  background-size: cover;
+  background-color: #614866;
 
 }
 
@@ -141,11 +174,15 @@
   color: #f9bc06;
 }
 .article-body {
-  background-color: #f2f2f2;
-  margin: auto;
-  border-radius: 15px;
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.9);
+  border-color: rgba(26, 26, 26, 0.9);
   border-style: solid;
   border-width: 1px;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-radius: 15px;
   padding: 20px;
   width: 80%;
   opacity: 1;
@@ -167,13 +204,7 @@
 }
 
 .signup-btn {
-  font-size: 16px;
-  background-color: #f9bc06;
-  color: rgb(86, 61, 124);
-}
-
-.signup-btn {
-  font-size: 16px;
+  font-size: 20px;
   background-color: #f9bc06;
   color: rgb(86, 61, 124);
 }
@@ -206,17 +237,18 @@
 
 .article-title {
   font-weight: bold;
-  color: rgb(86, 61, 124);
+  color: rgb(230, 230, 230);
   font-size: 1.5em;
 }
 
 .article-title:hover {
-  color: #330066;
+  color: hsl(240, 100%, 70%);
 }
 
 .list-body {
   border-top: 1px solid #eaeaea;
-  color: rgb(26, 26, 26);
+  color: rgb(230, 230, 230);
+  font-size: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
 
