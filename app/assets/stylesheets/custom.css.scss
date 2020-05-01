@@ -7,6 +7,11 @@
 .nav>li>a:hover, .nav>li>a:focus {
     background-color: transparent;
 }
+
+#colored-navbar {
+  background-color: #4F408D;
+}
+
 #logo {
   font-weight: bold;
   color: #fff !important;
@@ -24,7 +29,7 @@
   color: #4513BB;
   background-color: #FEF9E7;
   animation-name: example;
-  animation-duration: 8s;
+  animation-duration: 10s;
   border-radius: 30px;
   padding: 5px;
   padding-left: 10px;
@@ -99,7 +104,7 @@
 }
 
 .site-body {
-  background-color: #614866;
+  background-color: lightgrey;
 
 }
 
@@ -163,8 +168,7 @@
 }
 
 .head-purple {
-  color: rgb(26, 26, 26);
-  font-weight: bold;
+  color: #563d7c !important;
 }
 
 .white-text {

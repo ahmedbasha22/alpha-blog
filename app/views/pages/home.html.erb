@@ -4,6 +4,37 @@
     <meta charset="utf-8">
   </head>
   <body id="home_body">
+    <nav class="navbar navbar-expand-lg navbar-light" >
+      <%= link_to "Alpha Blog", root_path, class: "navbar-brand", id: "logo" %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <%= link_to "Articles", articles_path, class: "nav-link white-text" %>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link white-text" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle white-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Actions
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button class="btn btn-outline-success my-2 my-sm-0 round-btn" id="login" type="submit">Login</button>
+        </form>
+      </div>
+    </nav>
     <div class="container">
       <div id="home_jumbotron" align="center">
         <h1 class="display-4" align="center" id="welcome">Welcome to <span id="alpha-word">Alpha-Blog</span> !</h1>
