@@ -1,0 +1,20 @@
+<% if @article.errors.any? %>
+  <div class="alert alert-danger alert-dismissible fade show alert_body" role="alert">
+    <div>
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %>
+        prohibited this article from being saved
+      </h2>
+      <div>
+        <ul>
+          <% @article.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<% end %>

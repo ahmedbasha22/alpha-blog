@@ -1,6 +1,25 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 
 @import 'bootstrap/dist/css/bootstrap';
+
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+/* Other Classes for Page Styling */
+
+
+
 .nav .navbar-social > a {
     padding:0;
 }
@@ -22,6 +41,7 @@
 #home_body {
   background-image: asset-url("bg2.png");
   background-size: cover;
+  flex: 1 0 auto;
   font-family: sans-serif;
 }
 
@@ -29,7 +49,7 @@
   color: #4513BB;
   background-color: #FEF9E7;
   animation-name: example;
-  animation-duration: 10s;
+  animation-duration: 8s;
   border-radius: 30px;
   padding: 5px;
   padding-left: 10px;
@@ -67,13 +87,13 @@
 }
 
 .my_btn {
-  border-color: rgb(86, 61, 124);
-  color: rgb(86, 61, 124);
+  border-color: #4513BB !important;
+  color: #4513BB !important;
 
 }
 .my_btn:hover {
-  background-color:  #f9bc06;
-  color: rgb(86, 61, 124);
+  background-color:  #4513BB !important;
+  color: #fff !important;
 }
 .my_active_btn {
   background-color: rgb(86, 61, 124);
@@ -109,16 +129,16 @@
 }
 
 .form {
-  color: #fff;
-  background-color: rgba(26, 26, 26, 0.75);
-  border-color: rgba(26, 26, 26, 0.75);
+  color: #563d7c;
+  background-color: #fff;
+  border-color: #17a2b8;
   border-style: solid;
   border-width: 1px;
   margin: auto;
   margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
-  width: 65%;
+  width: 60%;
 }
 
 .signup {
@@ -148,14 +168,14 @@
 
 }
 
-#alert_body {
-  margin: auto;
-  margin-top: 20px;
-  width: 60%
+.alert_body {
+  margin: auto !important;
+  margin-top: 20px !important;
+  width: 60% !important
 }
 .head {
   color: #404040;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: sans-serif;
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -168,7 +188,8 @@
 }
 
 .head-purple {
-  color: #563d7c !important;
+  color: #3D3D3D !important;
+
 }
 
 .white-text {
@@ -204,7 +225,7 @@
 
 .round-btn {
   border-radius: 20px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .signup-btn {
@@ -239,6 +260,13 @@
   opacity: 1;
 }
 
+a.disabled {
+  /* Make the disabled links grayish*/
+  color: gray !important;
+  /* And disable the pointer events */
+  pointer-events: none;
+}
+
 .article-title {
   font-weight: bold;
   color: rgb(230, 230, 230);
@@ -259,7 +287,7 @@
 }
 
 .sign-text {
-  color: #fff;
+  color: #563d7c;
   font-family: "Segoe UI", Arial, sans-serif;
   margin-bottom: 20px;
 }
@@ -289,4 +317,9 @@
   width: 50%;
   margin: auto;
   margin-top: 20px;
+}
+.navbar-brand{
+  align-self: center;
+  padding: 0 24px 0 0;
+  border-right: 1px solid #686f7a;
 }

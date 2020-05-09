@@ -1,25 +1,27 @@
-
-<h2 align="center" class="head"><strong>Title: </strong><%= @article.title %></h2>
-<body class="site-body">
-  <div class="article-body">
-    <% if @article.user %>
-    <div align="center">
-      <h6>Created by:</h6>
-      <div class="gravatar">
-        <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+<body class="site-body d-flex flex-column">
+  <%= render 'layouts/navigation' %>
+  <h2 class="text-center mt-4 head-purple"><%= @article.title %></h2>
+  <div class="container">
+    <div class="row mt-4 justify-content-md-center">
+      <div class="col-9">
+        <div class="card text-center shadow mb-5 bg-white rounded">
+          <div class="card-header">
+            Created by: <%= @article.user.username if @article.user %>
+          </div>
+          <div class="card-body">
+            <div class="card-text text-left"><%= simple_format(@article.description) %></div>
+            <div class="article-btns">
+              <%= link_to 'Edit', edit_article_path(@article), class:"btn btn-outline-primary round-btn" %>
+              <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete this article?"}, class:"btn btn-outline-danger round-btn" %>
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            <small>
+               <%= time_ago_in_words(@article.created_at) %> ago, last updated: <%= time_ago_in_words(@article.updated_at) %> ago.</small>
+          </div>
+        </div>
       </div>
-      <div class="article-title name">
-        <%= link_to @article.user.username, user_path(@article.user)%>
-      </div>
-    </div>
-    <% end %>
-    <h3 align="center" id="description"><strong>Description</strong></h3>
-    <%= simple_format(@article.description) %>
-    <div class="article-btns">
-      <%= link_to 'Edit this article', edit_article_path(@article), class:"btn btn-primary round-btn" %>
-      <%= link_to 'Delete this article', article_path(@article), method: :delete, data: {confirm: "Are you sure you want to delete this article?"}, class:"btn btn-danger round-btn" %>
-      <%= link_to 'View all articles', articles_path, class:"btn my_active_btn round-btn active-round-btn" %>
     </div>
   </div>
-  
+
 </body>
